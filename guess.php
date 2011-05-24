@@ -3,13 +3,8 @@
 
     $pID = $_GET['pID'];
 ?>
-<html>
-    <head>
-        <script type="text/javascript" src="calendar/calendar.js"></script>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="main">
+    <?php include('header.php'); ?>
+        <div class="inner-container">
             <form action="submit_guess.php" method="post">
             <input type="hidden" name="poolID" value="<?php echo ($pID); ?>">
                 <div class="label">
@@ -62,5 +57,5 @@
                 </div>
             </form>
         </div>
-    </body>
-</html>
+      </div>
+    <?php include('footer.php'); ?>

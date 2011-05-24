@@ -1,13 +1,8 @@
 <?php
     require_once('calendar/classes/tc_calendar.php');
+    include('header.php');
 ?>
-<html>
-    <head>
-        <script type="text/javascript" src="calendar/calendar.js"></script>
-        <link href="styles.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <div class="main">
+        <div class="inner-container">
             <form action="submit_create.php" method="post">
                 <div class="label">
                     FacebookID:
